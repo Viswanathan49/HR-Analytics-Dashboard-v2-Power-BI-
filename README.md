@@ -6,7 +6,7 @@ Source: Employee Sample Dataset
 🖼️ Dashboard Preview
 Main Page — HR Analytics Dashboard
 (Add your screenshot file name here)
-![HR Analytics Dashboard](dashboard.jpg)
+![HR Analytics Dashboard](dashboard.png)
 
 📌 Project Overview
 This Power BI report was developed in Week 4 of the Microsoft Elevate Power BI Virtual Internship 2024. It focuses on HR analytics for a global workforce, providing insights into headcount, gender distribution, geography, age groups, and compensation.
