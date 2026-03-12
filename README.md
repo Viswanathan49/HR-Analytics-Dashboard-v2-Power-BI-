@@ -1,148 +1,84 @@
-Here’s a complete README you can paste and tweak (replace Vignesh InfoTech / dates if needed).
+📊 HR Analytics Dashboard v2 — Power BI
+Built during the Microsoft Elevate Power BI Virtual Internship Program (4 Weeks)
+Week 4 Project — HR Workforce Analytics (Headcount, Diversity, Geography)
+Source: Employee Sample Dataset
 
-HR Analytics Dashboard v2 – Power BI (Virtual Internship Week 4)
-This repository contains my Week 4 Power BI virtual internship project: an enhanced HR Analytics Dashboard built on an employee dataset. It focuses on clean dark‑theme design, interactive slicers, and key HR KPIs such as headcount, gender distribution, geography, and average salary.
+🖼️ Dashboard Preview
+Main Page — HR Analytics Dashboard
+(Add your screenshot file name here)
+![HR Analytics Dashboard](Screenshot-2026-03-12-221826.jpg)
 
-🚀 Project Overview
-The dashboard is designed for HR and leadership teams to quickly understand the workforce structure and composition. It allows users to slice the data by department, country, and employee, and explore how headcount and salary metrics change across different segments.
+📌 Project Overview
+This Power BI report was developed in Week 4 of the Microsoft Elevate Power BI Virtual Internship 2024. It focuses on HR analytics for a global workforce, providing insights into headcount, gender distribution, geography, age groups, and compensation.
 
-Key questions this report helps answer:
+The goal of this version (v2) is to improve on my earlier HR dashboard by:
 
-What is our total headcount and gender split?
+Using a clean dark theme and consistent layout
 
-How is headcount distributed across departments and countries?
+Adding more interactive slicers (Department, Country, Employee)
 
-How has headcount changed over hire years?
+Introducing additional KPIs such as gender % and average salary
 
-How does headcount vary across age groups?
+Enhancing storytelling with YoY headcount and age‑group analysis
 
-📊 Dashboard Features
-KPI Cards
+📈 Key Metrics Tracked
+Metric	Description
+Total Employees	Overall headcount in the organization
+Total Male Count & Male %	Number and percentage of male employees
+Total Female Count & Female %	Number and percentage of female employees
+Average Salary	Average annual salary across all employees
+(You can later replace this table with actual numbers if you want.)
 
-Total Employees
+📊 Visuals Included
+Top Section – KPI & Navigation
+KPI Cards — Total Employees, Total Male Count & %, Total Female Count & %, Average Salary
 
-Total Male Count and Male %
+Decomposition Tree — Explore headcount by Country → City → Business Unit → Gender
 
-Total Female Count and Female %
+Middle & Bottom Section – Detailed Insights
+Headcount by Department and Gender — Clustered bar chart showing male vs female distribution by department
 
-Average Salary
+Headcount by Gender — Donut chart highlighting overall gender split
 
-Interactive Slicers
+Headcount by YoY — Line chart based on hire year to show how headcount has grown over time
 
-Department
+Headcount by Age Group — Column chart showing workforce distribution across age ranges
 
-Country
+🔍 Filters & Slicers
+All visuals are interactive and respond to the following slicers on the left panel:
 
-Employee Name (with search)
+Department — Accounting, Engineering, Finance, Human Resources, IT, Marketing, Sales
 
-Visuals
+Country — Brazil, China, United States
 
-Headcount by Department and Gender (clustered bar chart)
+Employee Name — Searchable list of employees
 
-Headcount by Gender (donut chart)
+These slicers allow HR teams to quickly drill into specific departments, regions, or employees and see how metrics change.
 
-Headcount by YoY – headcount by hire year (line chart)
+🗂️ Files in this Repository
+File	Description
+HR_Analytics_Dashboard_v2.pbix	Power BI report file (Week 4 HR dashboard)
+Employee-Sample-Data.xlsx	Source employee dataset
+Screenshot-2026-03-12-221826.jpg	Dashboard preview – HR Analytics Dashboard
+theme_preview_16x9.html	Theme preview (dark mode)
+(Adjust file names to match your actual repo.)
 
-Headcount by Age Group (column chart)
+🛠️ Tools & Technologies
+Microsoft Power BI Desktop
 
-Navigation / Summary using a decomposition tree for Country, City, Business Unit, and Gender
+Microsoft Excel (employee data source)
 
-Design
+DAX (Data Analysis Expressions) for calculations and KPIs
 
-Dark theme with consistent color palette
+Power Query for data loading and basic transformations
 
-Clean layout with a left filter panel and central analytics area
+Dark theme UI design for better focus and readability
 
-Readable typography and spacing suitable for presentations or management reviews
-
-🧾 Dataset
-File: Employee-Sample-Data.xlsx
-
-Main columns used:
-
-Employee ID, Full Name
-
-Job Title, Department, Business Unit
-
-Gender, Ethnicity, Age
-
-Hire Date
-
-Annual Salary, Bonus %
-
-Country, City
-
-The dataset represents current employees and is used only for educational and portfolio purposes.
-
-🧮 Key DAX Measures
-Some of the core measures used in this report:
-
-text
-Total Employees =
-COUNTROWS ( 'Employee Data' )
-
-Total Male Count =
-CALCULATE (
-    [Total Employees],
-    'Employee Data'[Gender] = "Male"
-)
-
-Total Female Count =
-CALCULATE (
-    [Total Employees],
-    'Employee Data'[Gender] = "Female"
-)
-
-Male % =
-DIVIDE ( [Total Male Count], [Total Employees] )
-
-Female % =
-DIVIDE ( [Total Female Count], [Total Employees] )
-
-Average Salary =
-AVERAGEX ( 'Employee Data', 'Employee Data'[Annual Salary] )
-(You can add more measures here later if you extend the project.)
-
-🛠️ Tools & Skills
-Tool: Microsoft Power BI Desktop
-
-Skills demonstrated:
-
-Data cleaning and modeling
-
-DAX measures for KPIs
-
-Dashboard layout and dark‑theme UI design
-
-Use of slicers, decomposition tree, donut, bar, line, and column charts
-
-Storytelling with HR analytics
-
-📂 Project Structure
-Employee-Sample-Data.xlsx – source dataset
-
-HR_Analytics_Dashboard.pbix – Power BI report file (add when uploaded)
-
-screenshots/ – exported dashboard images for quick preview
-
-README.md – project documentation
-
-✅ How to Use
-Clone this repository.
-
-Open HR_Analytics_Dashboard.pbix in Power BI Desktop.
-
-If needed, update the file path for Employee-Sample-Data.xlsx.
-
-Interact with slicers and visuals to explore the HR metrics.
-
-🔗 Related Work
-This is the Week 4 version of my HR analytics project.
-You can also see my earlier Week 3 HR Analytics Dashboard here:
-
-HR Analytics Dashboard – Week 3
-
-📣 Feedback
-I’m actively improving my Power BI and data analytics skills.
-If you have suggestions on design, KPIs, or DAX, feel free to open an issue or reach out!
+🧑‍💻 Author
+Viswanathan S
 Contact : viswanathansk49@gmail.com
+Microsoft Elevate Power BI Virtual Internship 2024 — Week 4 Project
+
+📄 License
+This project is created for educational and portfolio purposes.
+
